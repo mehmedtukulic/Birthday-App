@@ -20,6 +20,10 @@
 		D09B126A28AFCE31000D8D6A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B126928AFCE31000D8D6A /* UIView+Extension.swift */; };
 		D09B126D28AFCF61000D8D6A /* FeedItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B126B28AFCF61000D8D6A /* FeedItemViewCell.swift */; };
 		D09B126E28AFCF61000D8D6A /* FeedItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09B126C28AFCF61000D8D6A /* FeedItemViewCell.xib */; };
+		D09B127028AFD451000D8D6A /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B126F28AFD451000D8D6A /* Resources.swift */; };
+		D09B127228AFD682000D8D6A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127128AFD682000D8D6A /* FeedViewModel.swift */; };
+		D09B127428AFD6D8000D8D6A /* ApiRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127328AFD6D8000D8D6A /* ApiRestClient.swift */; };
+		D09B127628AFD6F2000D8D6A /* ApiParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127528AFD6F2000D8D6A /* ApiParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D09B126928AFCE31000D8D6A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D09B126B28AFCF61000D8D6A /* FeedItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemViewCell.swift; sourceTree = "<group>"; };
 		D09B126C28AFCF61000D8D6A /* FeedItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedItemViewCell.xib; sourceTree = "<group>"; };
+		D09B126F28AFD451000D8D6A /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D09B127128AFD682000D8D6A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		D09B127328AFD6D8000D8D6A /* ApiRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRestClient.swift; sourceTree = "<group>"; };
+		D09B127528AFD6F2000D8D6A /* ApiParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +98,8 @@
 		D09B122628AFC67F000D8D6A /* BirthdayApp */ = {
 			isa = PBXGroup;
 			children = (
-				D09B125728AFC77B000D8D6A /* Network */,
 				D09B125828AFC79C000D8D6A /* Utils & Extensions */,
+				D09B125728AFC77B000D8D6A /* Network */,
 				D09B125A28AFC7B9000D8D6A /* Repositories */,
 				D09B125B28AFC7D1000D8D6A /* Features */,
 				D09B125C28AFC7E9000D8D6A /* Resources */,
@@ -112,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				D09B125928AFC7AC000D8D6A /* Models */,
+				D09B127328AFD6D8000D8D6A /* ApiRestClient.swift */,
+				D09B127528AFD6F2000D8D6A /* ApiParameters.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -150,6 +160,7 @@
 		D09B125C28AFC7E9000D8D6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D09B126F28AFD451000D8D6A /* Resources.swift */,
 				D09B123028AFC681000D8D6A /* Assets.xcassets */,
 				D09B123528AFC681000D8D6A /* Info.plist */,
 			);
@@ -172,6 +183,7 @@
 				D09B126628AFCD91000D8D6A /* cells */,
 				D09B125F28AFC920000D8D6A /* FeedViewController.swift */,
 				D09B126028AFC920000D8D6A /* FeedViewController.xib */,
+				D09B127128AFD682000D8D6A /* FeedViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -299,12 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09B126A28AFCE31000D8D6A /* UIView+Extension.swift in Sources */,
+				D09B127428AFD6D8000D8D6A /* ApiRestClient.swift in Sources */,
+				D09B127628AFD6F2000D8D6A /* ApiParameters.swift in Sources */,
 				D09B126528AFCD1A000D8D6A /* UIViewController+Extension.swift in Sources */,
 				D09B126828AFCDF4000D8D6A /* UICollectionView+Extension.swift in Sources */,
 				D09B122C28AFC67F000D8D6A /* ViewController.swift in Sources */,
 				D09B126128AFC920000D8D6A /* FeedViewController.swift in Sources */,
+				D09B127028AFD451000D8D6A /* Resources.swift in Sources */,
 				D09B122828AFC67F000D8D6A /* AppDelegate.swift in Sources */,
 				D09B126D28AFCF61000D8D6A /* FeedItemViewCell.swift in Sources */,
+				D09B127228AFD682000D8D6A /* FeedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

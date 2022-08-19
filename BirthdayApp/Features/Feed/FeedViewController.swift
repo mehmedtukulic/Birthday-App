@@ -20,6 +20,7 @@ class FeedViewController: UIViewController {
     
     private func setScreen() {
         mainHeaderTitle.text = "Birthdays"
+        mainHeaderTitle.textColor = Colors.primaryBlack
         mainHeaderTitle.font = .boldSystemFont(ofSize: 20)
     }
     
@@ -27,6 +28,11 @@ class FeedViewController: UIViewController {
         collectionView.registerCell(ofType: FeedItemViewCell.self)
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView.collectionViewLayout = layout
     }
 }
 

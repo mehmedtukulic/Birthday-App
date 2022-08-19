@@ -25,12 +25,12 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrp-75-oqd" userLabel="Name initials">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="mrp-75-oqd" secondAttribute="bottom" id="P7H-px-vqm"/>
                                     <constraint firstItem="mrp-75-oqd" firstAttribute="top" secondItem="FMi-Xs-FuF" secondAttribute="top" id="nhV-Yg-mjd"/>
@@ -57,13 +57,23 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83f-HC-cJa" userLabel="Separator view">
+                                <rect key="frame" x="0.0" y="71.5" width="353" height="0.5"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="ubu-cF-9Zj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FMi-Xs-FuF" firstAttribute="leading" secondItem="C4F-bl-BR0" secondAttribute="leading" constant="14" id="8db-b6-tZJ"/>
+                            <constraint firstAttribute="bottom" secondItem="83f-HC-cJa" secondAttribute="bottom" id="BYl-aG-cvG"/>
                             <constraint firstItem="FMi-Xs-FuF" firstAttribute="centerY" secondItem="C4F-bl-BR0" secondAttribute="centerY" id="aa4-bA-P9o"/>
+                            <constraint firstAttribute="trailing" secondItem="83f-HC-cJa" secondAttribute="trailing" id="gcG-ZO-Fjs"/>
                             <constraint firstItem="91x-Bb-cDU" firstAttribute="leading" secondItem="FMi-Xs-FuF" secondAttribute="trailing" constant="14" id="gwX-aL-roq"/>
                             <constraint firstItem="91x-Bb-cDU" firstAttribute="centerY" secondItem="C4F-bl-BR0" secondAttribute="centerY" id="iDj-lr-lDq"/>
+                            <constraint firstItem="83f-HC-cJa" firstAttribute="leading" secondItem="C4F-bl-BR0" secondAttribute="leading" id="inX-QN-87U"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -83,7 +93,7 @@
                 <outlet property="initialsView" destination="FMi-Xs-FuF" id="oPp-rm-tz4"/>
                 <outlet property="nameLabel" destination="Riy-ce-aTd" id="ISz-RY-vrT"/>
             </connections>
-            <point key="canvasLocation" x="-107" y="84"/>
+            <point key="canvasLocation" x="-107.97101449275362" y="83.705357142857139"/>
         </collectionViewCell>
     </objects>
     <resources>
