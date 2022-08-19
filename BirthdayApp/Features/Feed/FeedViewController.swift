@@ -67,6 +67,8 @@ class FeedViewController: UIViewController {
     }
 }
 
+// MARK: - Collection handlings
+
 extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.feedItems.value.count
@@ -77,10 +79,25 @@ extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.configure(person: viewModel.feedItems.value[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let person = viewModel.feedItems.value[indexPath.row]
+        navigateToDetailsScreen(with: person)
+    }
 }
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: cellHeight)
+    }
+}
+
+// MARK: - Navigation
+
+extension FeedViewController {
+    private func navigateToDetailsScreen(with person: Person) {
+        let vc = PersonDetailsViewController()
+        vc.setup(person: person)
+        push(vc)
     }
 }

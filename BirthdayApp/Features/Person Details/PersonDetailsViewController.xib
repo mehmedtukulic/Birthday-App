@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonDetailsViewController" customModule="BirthdayApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="T7e-67-EME" id="iY5-ax-Drg"/>
+                <outlet property="initialsLabel" destination="bXQ-zb-tH0" id="Qwt-gT-glb"/>
+                <outlet property="initialsView" destination="KNn-p4-LKD" id="fAF-ki-SSo"/>
+                <outlet property="nameLabel" destination="CuU-9Y-Pwq" id="50c-V2-V4P"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearsLabel" destination="hBq-gn-Urm" id="V37-cN-1TA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNn-p4-LKD" userLabel="Initials view">
+                    <rect key="frame" x="157" y="107" width="100" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-zb-tH0" userLabel="Intitials Label">
+                            <rect key="frame" x="14" y="20" width="72.5" height="60"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bXQ-zb-tH0" firstAttribute="centerX" secondItem="KNn-p4-LKD" secondAttribute="centerX" id="Sik-oB-FwX"/>
+                        <constraint firstAttribute="width" constant="100" id="aVv-4o-b2M"/>
+                        <constraint firstAttribute="height" constant="100" id="euA-sE-ZAW"/>
+                        <constraint firstItem="bXQ-zb-tH0" firstAttribute="centerY" secondItem="KNn-p4-LKD" secondAttribute="centerY" id="gkQ-QW-a3f"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-9Y-Pwq" userLabel="Name ">
+                    <rect key="frame" x="171.5" y="277" width="71" height="39"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-gn-Urm" userLabel="Years">
+                    <rect key="frame" x="162.5" y="324" width="89" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-67-EME" userLabel="Back button">
+                    <rect key="frame" x="20" y="714" width="374" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="kt7-wj-zrW"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="GO BACK"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="yMG-KZ-9UQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hBq-gn-Urm" firstAttribute="top" secondItem="CuU-9Y-Pwq" secondAttribute="bottom" constant="8" id="37S-ZE-JY2"/>
+                <constraint firstItem="T7e-67-EME" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6iL-lZ-S18"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T7e-67-EME" secondAttribute="trailing" constant="20" id="Dua-uZ-rg8"/>
+                <constraint firstItem="KNn-p4-LKD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="63" id="Ssg-st-xFp"/>
+                <constraint firstItem="KNn-p4-LKD" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="TVu-Dl-I6E"/>
+                <constraint firstItem="hBq-gn-Urm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VU1-eB-Ivg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="T7e-67-EME" secondAttribute="bottom" constant="100" id="fJM-vj-fEz"/>
+                <constraint firstItem="CuU-9Y-Pwq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hGc-jW-Sgq"/>
+                <constraint firstItem="CuU-9Y-Pwq" firstAttribute="top" secondItem="KNn-p4-LKD" secondAttribute="bottom" constant="70" id="zb2-eU-7i5"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="151"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

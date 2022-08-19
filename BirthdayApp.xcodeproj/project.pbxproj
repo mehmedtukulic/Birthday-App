@@ -29,6 +29,9 @@
 		D09B127D28AFDA38000D8D6A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127C28AFDA38000D8D6A /* Observable.swift */; };
 		D09B127F28AFDC0C000D8D6A /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127E28AFDC0C000D8D6A /* FeedResponse.swift */; };
 		D09B128128AFE13D000D8D6A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B128028AFE13D000D8D6A /* Date+Extension.swift */; };
+		D09B128528AFE286000D8D6A /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B128328AFE286000D8D6A /* PersonDetailsViewController.swift */; };
+		D09B128628AFE286000D8D6A /* PersonDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09B128428AFE286000D8D6A /* PersonDetailsViewController.xib */; };
+		D09B128828AFE6BE000D8D6A /* PersonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B128728AFE6BE000D8D6A /* PersonDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		D09B127C28AFDA38000D8D6A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		D09B127E28AFDC0C000D8D6A /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		D09B128028AFE13D000D8D6A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D09B128328AFE286000D8D6A /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		D09B128428AFE286000D8D6A /* PersonDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailsViewController.xib; sourceTree = "<group>"; };
+		D09B128728AFE6BE000D8D6A /* PersonDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			children = (
 				D09B125D28AFC7FB000D8D6A /* Initial */,
 				D09B125E28AFC8E5000D8D6A /* Feed */,
+				D09B128228AFE250000D8D6A /* Person Details */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -228,6 +235,16 @@
 				D09B127A28AFD840000D8D6A /* FeedRequests.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		D09B128228AFE250000D8D6A /* Person Details */ = {
+			isa = PBXGroup;
+			children = (
+				D09B128328AFE286000D8D6A /* PersonDetailsViewController.swift */,
+				D09B128428AFE286000D8D6A /* PersonDetailsViewController.xib */,
+				D09B128728AFE6BE000D8D6A /* PersonDetailsViewModel.swift */,
+			);
+			path = "Person Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +330,7 @@
 			files = (
 				D09B123428AFC681000D8D6A /* LaunchScreen.storyboard in Resources */,
 				D09B123128AFC681000D8D6A /* Assets.xcassets in Resources */,
+				D09B128628AFE286000D8D6A /* PersonDetailsViewController.xib in Resources */,
 				D09B126228AFC920000D8D6A /* FeedViewController.xib in Resources */,
 				D09B126E28AFCF61000D8D6A /* FeedItemViewCell.xib in Resources */,
 				D09B122F28AFC67F000D8D6A /* Main.storyboard in Resources */,
@@ -334,10 +352,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09B126A28AFCE31000D8D6A /* UIView+Extension.swift in Sources */,
+				D09B128528AFE286000D8D6A /* PersonDetailsViewController.swift in Sources */,
 				D09B127F28AFDC0C000D8D6A /* FeedResponse.swift in Sources */,
 				D09B127428AFD6D8000D8D6A /* ApiRestClient.swift in Sources */,
 				D09B127628AFD6F2000D8D6A /* ApiParameters.swift in Sources */,
 				D09B127928AFD7FB000D8D6A /* FeedRepository.swift in Sources */,
+				D09B128828AFE6BE000D8D6A /* PersonDetailsViewModel.swift in Sources */,
 				D09B128128AFE13D000D8D6A /* Date+Extension.swift in Sources */,
 				D09B126528AFCD1A000D8D6A /* UIViewController+Extension.swift in Sources */,
 				D09B126828AFCDF4000D8D6A /* UICollectionView+Extension.swift in Sources */,
