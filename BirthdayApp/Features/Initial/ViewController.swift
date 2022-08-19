@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadFeed()
     }
 
-
+    private func loadFeed() {
+        let vc = FeedViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
