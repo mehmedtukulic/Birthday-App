@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     private func loadFeed() {
         let vc = FeedViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.setViewControllers([vc], animated: true)
     }
 }
 
