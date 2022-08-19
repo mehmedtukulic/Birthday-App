@@ -76,12 +76,12 @@
 		D09B122628AFC67F000D8D6A /* BirthdayApp */ = {
 			isa = PBXGroup;
 			children = (
+				D09B125728AFC77B000D8D6A /* Network */,
+				D09B125828AFC79C000D8D6A /* Utils */,
+				D09B125A28AFC7B9000D8D6A /* Repositories */,
+				D09B125B28AFC7D1000D8D6A /* Features */,
+				D09B125C28AFC7E9000D8D6A /* Resources */,
 				D09B122728AFC67F000D8D6A /* AppDelegate.swift */,
-				D09B122B28AFC67F000D8D6A /* ViewController.swift */,
-				D09B122D28AFC67F000D8D6A /* Main.storyboard */,
-				D09B123028AFC681000D8D6A /* Assets.xcassets */,
-				D09B123228AFC681000D8D6A /* LaunchScreen.storyboard */,
-				D09B123528AFC681000D8D6A /* Info.plist */,
 			);
 			path = BirthdayApp;
 			sourceTree = "<group>";
@@ -92,6 +92,62 @@
 				D09B123E28AFC681000D8D6A /* BirthdayAppTests.swift */,
 			);
 			path = BirthdayAppTests;
+			sourceTree = "<group>";
+		};
+		D09B125728AFC77B000D8D6A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D09B125928AFC7AC000D8D6A /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D09B125828AFC79C000D8D6A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D09B125928AFC7AC000D8D6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D09B125A28AFC7B9000D8D6A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D09B125B28AFC7D1000D8D6A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D09B125D28AFC7FB000D8D6A /* Initial */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D09B125C28AFC7E9000D8D6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D09B123028AFC681000D8D6A /* Assets.xcassets */,
+				D09B123528AFC681000D8D6A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D09B125D28AFC7FB000D8D6A /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				D09B123228AFC681000D8D6A /* LaunchScreen.storyboard */,
+				D09B122D28AFC67F000D8D6A /* Main.storyboard */,
+				D09B122B28AFC67F000D8D6A /* ViewController.swift */,
+			);
+			path = Initial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BirthdayApp/Info.plist;
+				INFOPLIST_FILE = BirthdayApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -387,7 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BirthdayApp/Info.plist;
+				INFOPLIST_FILE = BirthdayApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
