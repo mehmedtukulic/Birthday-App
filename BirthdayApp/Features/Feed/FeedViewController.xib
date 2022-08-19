@@ -34,7 +34,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mV4-H2-4p3">
-                    <rect key="frame" x="0.0" y="98.5" width="414" height="764.5"/>
+                    <rect key="frame" x="0.0" y="98.5" width="414" height="797.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j6L-HL-9k4">
                         <size key="itemSize" width="128" height="128"/>
@@ -50,7 +50,7 @@
                 <constraint firstItem="4AT-Xp-wpO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="5gm-bu-aw4"/>
                 <constraint firstItem="mV4-H2-4p3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6ox-VN-0gz"/>
                 <constraint firstItem="w5V-Mo-WMO" firstAttribute="top" secondItem="4AT-Xp-wpO" secondAttribute="bottom" constant="16" id="8JC-dK-pOJ"/>
-                <constraint firstAttribute="bottom" secondItem="mV4-H2-4p3" secondAttribute="bottom" constant="33" id="8uY-kW-i45"/>
+                <constraint firstAttribute="bottom" secondItem="mV4-H2-4p3" secondAttribute="bottom" id="8uY-kW-i45"/>
                 <constraint firstItem="mV4-H2-4p3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BZ3-OR-49K"/>
                 <constraint firstItem="4AT-Xp-wpO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="J5A-DA-KuV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w5V-Mo-WMO" secondAttribute="trailing" id="UR6-cz-odJ"/>

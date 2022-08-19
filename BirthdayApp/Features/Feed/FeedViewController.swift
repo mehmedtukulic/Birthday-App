@@ -71,17 +71,17 @@ class FeedViewController: UIViewController {
 
 extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.feedItems.value.count
+        return viewModel.feedItems.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(ofType: FeedItemViewCell.self, indexPath: indexPath)
-        cell.configure(person: viewModel.feedItems.value[indexPath.row])
+        cell.configure(person: viewModel.feedItems[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let person = viewModel.feedItems.value[indexPath.row]
+        let person = viewModel.feedItems[indexPath.row]
         navigateToDetailsScreen(with: person)
     }
 }
