@@ -45,6 +45,7 @@ class APIClient: APIProtocol {
                 }
                 return
             }
+            
             if let error = error {
                 DispatchQueue.main.async {
                     failure(error.localizedDescription)

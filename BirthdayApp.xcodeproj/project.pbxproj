@@ -24,6 +24,10 @@
 		D09B127228AFD682000D8D6A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127128AFD682000D8D6A /* FeedViewModel.swift */; };
 		D09B127428AFD6D8000D8D6A /* ApiRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127328AFD6D8000D8D6A /* ApiRestClient.swift */; };
 		D09B127628AFD6F2000D8D6A /* ApiParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127528AFD6F2000D8D6A /* ApiParameters.swift */; };
+		D09B127928AFD7FB000D8D6A /* FeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127828AFD7FB000D8D6A /* FeedRepository.swift */; };
+		D09B127B28AFD840000D8D6A /* FeedRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127A28AFD840000D8D6A /* FeedRequests.swift */; };
+		D09B127D28AFDA38000D8D6A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127C28AFDA38000D8D6A /* Observable.swift */; };
+		D09B127F28AFDC0C000D8D6A /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09B127E28AFDC0C000D8D6A /* FeedResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		D09B127128AFD682000D8D6A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		D09B127328AFD6D8000D8D6A /* ApiRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRestClient.swift; sourceTree = "<group>"; };
 		D09B127528AFD6F2000D8D6A /* ApiParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiParameters.swift; sourceTree = "<group>"; };
+		D09B127828AFD7FB000D8D6A /* FeedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepository.swift; sourceTree = "<group>"; };
+		D09B127A28AFD840000D8D6A /* FeedRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequests.swift; sourceTree = "<group>"; };
+		D09B127C28AFDA38000D8D6A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		D09B127E28AFDC0C000D8D6A /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 				D09B125B28AFC7D1000D8D6A /* Features */,
 				D09B125C28AFC7E9000D8D6A /* Resources */,
 				D09B122728AFC67F000D8D6A /* AppDelegate.swift */,
+				D09B127C28AFDA38000D8D6A /* Observable.swift */,
 			);
 			path = BirthdayApp;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 		D09B125928AFC7AC000D8D6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D09B127E28AFDC0C000D8D6A /* FeedResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +154,7 @@
 		D09B125A28AFC7B9000D8D6A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D09B127728AFD7E2000D8D6A /* Feed */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -205,6 +216,15 @@
 				D09B126C28AFCF61000D8D6A /* FeedItemViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		D09B127728AFD7E2000D8D6A /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D09B127828AFD7FB000D8D6A /* FeedRepository.swift */,
+				D09B127A28AFD840000D8D6A /* FeedRequests.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,13 +331,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09B126A28AFCE31000D8D6A /* UIView+Extension.swift in Sources */,
+				D09B127F28AFDC0C000D8D6A /* FeedResponse.swift in Sources */,
 				D09B127428AFD6D8000D8D6A /* ApiRestClient.swift in Sources */,
 				D09B127628AFD6F2000D8D6A /* ApiParameters.swift in Sources */,
+				D09B127928AFD7FB000D8D6A /* FeedRepository.swift in Sources */,
 				D09B126528AFCD1A000D8D6A /* UIViewController+Extension.swift in Sources */,
 				D09B126828AFCDF4000D8D6A /* UICollectionView+Extension.swift in Sources */,
 				D09B122C28AFC67F000D8D6A /* ViewController.swift in Sources */,
 				D09B126128AFC920000D8D6A /* FeedViewController.swift in Sources */,
 				D09B127028AFD451000D8D6A /* Resources.swift in Sources */,
+				D09B127B28AFD840000D8D6A /* FeedRequests.swift in Sources */,
+				D09B127D28AFDA38000D8D6A /* Observable.swift in Sources */,
 				D09B122828AFC67F000D8D6A /* AppDelegate.swift in Sources */,
 				D09B126D28AFCF61000D8D6A /* FeedItemViewCell.swift in Sources */,
 				D09B127228AFD682000D8D6A /* FeedViewModel.swift in Sources */,

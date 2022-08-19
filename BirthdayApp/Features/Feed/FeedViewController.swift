@@ -11,11 +11,18 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var mainHeaderTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    private let viewModel = FeedViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBarHidden()
         setScreen()
         setCollection()
+        bindViewModel()
+    }
+    
+    private func bindViewModel() {
+        
     }
     
     private func setScreen() {
