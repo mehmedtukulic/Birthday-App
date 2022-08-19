@@ -24,7 +24,12 @@ class FeedItemViewCell: UICollectionViewCell {
         
         initialsTitleLabel.font = .systemFont(ofSize: 16, weight: .semibold)
         nameLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        birthdayLabel.font = .systemFont(ofSize: 13, weight: .semibold)
+        birthdayLabel.font = .systemFont(ofSize: 13, weight: .regular)
     }
     
+    func configure(person: Person) {
+        initialsTitleLabel.text = "\(person.name.first.prefix(1))" + "\(person.name.last.prefix(1))"
+        nameLabel.text = "\(person.name.first) \(person.name.last)"
+        birthdayLabel.text = Date.localizeDateFrom(dateString: person.dob.date)
+    }
 }

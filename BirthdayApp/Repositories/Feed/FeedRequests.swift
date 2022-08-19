@@ -13,7 +13,7 @@ enum FeedRequest: APIRequest {
     var url: String {
         switch self {
         case .getFeed:
-            return "https://randomuser.me/api/?results=1000&seed=chalkboard&inc=name,dob"
+            return "https://randomuser.me/api/?results=100&seed=chalkboard&inc=name,dob"
         }
     }
     

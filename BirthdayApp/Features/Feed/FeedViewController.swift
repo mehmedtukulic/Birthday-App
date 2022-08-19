@@ -11,6 +11,8 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var mainHeaderTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    private let activityIndicator = UIActivityIndicatorView(style: .large)
+    private let cellHeight: CGFloat = 66
     private let viewModel = FeedViewModel()
     
     override func viewDidLoad() {
@@ -22,7 +24,16 @@ class FeedViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        
+        viewModel.isLoadingItems.bind { [weak self] loading in
+            guard let self = self else { return }
+            
+            if loading {
+                self.startLoader()
+            } else {
+                self.stopLoader()
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     private func setScreen() {
@@ -41,21 +52,35 @@ class FeedViewController: UIViewController {
         layout.minimumLineSpacing = 0
         collectionView.collectionViewLayout = layout
     }
+    
+    private func startLoader() {
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
+        activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        activityIndicator.startAnimating()
+    }
+    
+    private func stopLoader() {
+        activityIndicator.stopAnimating()
+        activityIndicator.removeFromSuperview()
+    }
 }
 
 extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        return viewModel.feedItems.value.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(ofType: FeedItemViewCell.self, indexPath: indexPath)
+        cell.configure(person: viewModel.feedItems.value[indexPath.row])
         return cell
     }
 }
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 66)
+        return CGSize(width: collectionView.frame.width, height: cellHeight)
     }
 }
