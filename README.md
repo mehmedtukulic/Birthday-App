@@ -30,7 +30,7 @@ If I had more time I would:
 - Have fonts in my resources
 - Be more carefull to details 
 
-Since I was bordered to 3 hours max, I applogize for taking 20-30 mins extra for making Readme file.
+The project was built under 3 hours
 
 
 
